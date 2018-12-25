@@ -13,7 +13,7 @@ zplug "zsh-users/zsh-history-substring-search", defer:3 # Should be loaded last.
 zplug "chrissicool/zsh-256color"
 
 zplug "junegunn/fzf", use:"shell/*.zsh"
-zplug "zdharma/zsh-diff-so-fancy", as:command, use:bin/git-dsf
+zplug "zdharma/zsh-diff-so-fancy"
 
 zplug "tysonwolker/iterm-tab-colors"
 
