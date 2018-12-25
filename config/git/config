@@ -55,9 +55,10 @@ status = auto
 
 [color "status"]
 	added = green
+	updated = green
 	changed = yellow
 	untracked = cyan
-	deleted = red
+	unmerged = red
 
 [rerere]
 	enabled = true
