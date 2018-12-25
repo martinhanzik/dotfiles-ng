@@ -27,6 +27,7 @@ export HISTSIZE=11000
 export SAVEHIST=10000
 export HISTFILE=~/.zhistory
 
+SPACESHIP_DIR_TRUNC_REPO=false
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stamps section
   user          # Username section
