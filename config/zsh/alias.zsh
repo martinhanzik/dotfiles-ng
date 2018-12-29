@@ -4,6 +4,8 @@ alias git="hub"
 alias g="hub"
 
 alias d="docker"
+alias dc="docker-compose"
+alias dm="docker-machine"
 
 alias rm="trash"
 alias ls="exa"

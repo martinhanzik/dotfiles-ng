@@ -1,7 +1,5 @@
 # zmodload zsh/zprof
 
-bindkey -e
-
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed;command' format.
 setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
@@ -27,33 +25,10 @@ export HISTSIZE=11000
 export SAVEHIST=10000
 export HISTFILE=~/.zhistory
 
-# Alt+Backspace
-backward-kill-dir () {
-    local WORDCHARS=${WORDCHARS/\/}
-    zle backward-kill-word
-}
-zle -N backward-kill-dir
-bindkey '^[^?' backward-kill-dir
-
-bindkey "^[[H" beginning-of-line      # [Home] - Go to beginning of line
-bindkey "^[[F"  end-of-line           # [End] - Go to end of line
-# bindkey "^[[D" beginning-of-line      # [Cmd-Left] - Go to beginning of line
-# bindkey "^[[C"  end-of-line           # [Cmd-Right] - Go to end of line
-
 [ -f $ZDOTDIR/spaceship.zsh ] && source $ZDOTDIR/spaceship.zsh
 [ -f $ZDOTDIR/plug.zsh ] && source $ZDOTDIR/plug.zsh
+[ -f $ZDOTDIR/keybinding.zsh ] && source $ZDOTDIR/keybinding.zsh
 [ -f $ZDOTDIR/alias.zsh ] && source $ZDOTDIR/alias.zsh
+[ -f $ZDOTDIR/completion.zsh ] && source $ZDOTDIR/completion.zsh
+[ -f $ZDOTDIR/fzf.zsh ] && source $ZDOTDIR/fzf.zsh
 source ~/.iterm2_shell_integration.zsh
-
-# Use fd (https://github.com/sharkdp/fd) instead of the default find
-# command for listing path candidates.
-# - The first argument to the function ($1) is the base path to start traversal
-# - See the source code (completion.{bash,zsh}) for the details.
-_fzf_compgen_path() {
-  fd --hidden --follow --exclude ".git" . "$1"
-}
-
-# Use fd to generate the list for directory completion
-_fzf_compgen_dir() {
-  fd --type d --hidden --follow --exclude ".git" . "$1"
-}
