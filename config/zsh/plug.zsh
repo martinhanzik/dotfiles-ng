@@ -21,6 +21,7 @@ zplug "lib/clipboard", from:oh-my-zsh
 zplug "plugins/aws", from:oh-my-zsh
 zplug "plugins/cargo", from:oh-my-zsh
 zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/docker-machine", use:_docker-machine, from:oh-my-zsh
 zplug "plugins/extract", from:oh-my-zsh
 zplug "plugins/heroku", from:oh-my-zsh
 zplug "plugins/mosh", from:oh-my-zsh
