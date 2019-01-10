@@ -31,4 +31,5 @@ export HISTFILE=~/.zhistory
 [ -f $ZDOTDIR/alias.zsh ] && source $ZDOTDIR/alias.zsh
 [ -f $ZDOTDIR/completion.zsh ] && source $ZDOTDIR/completion.zsh
 [ -f $ZDOTDIR/fzf.zsh ] && source $ZDOTDIR/fzf.zsh
+[ -f $ZDOTDIR/sudo.zsh ] && source $ZDOTDIR/sudo.zsh
 source ~/.iterm2_shell_integration.zsh
