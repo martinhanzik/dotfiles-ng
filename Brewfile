@@ -54,6 +54,6 @@ cask "spotify"
 cask "synology-drive"
 cask "telegram"
 cask "the-unarchiver"
-cask "tower"
+cask "tower2"
 cask "visual-studio-code"
 mas "Bear", id: 1091189122
