@@ -1,0 +1,69 @@
+Host jabDevAlpha
+  HostName 192.168.24.104
+  User mhanzik
+Host jabDevBeta
+  HostName 192.168.24.105
+  User mhanzik
+Host jabDevGamma
+  HostName 192.168.24.106
+  User mhanzik
+Host jabPerDevAlpha
+  HostName 192.168.24.120
+  User mhanzik
+Host jabStgAlpha
+  HostName 192.168.24.101
+  User mhanzik
+Host jabStgBeta
+  HostName 192.168.24.102
+  User mhanzik
+Host jabStgGamma
+  HostName 192.168.24.103
+  User mhanzik
+Host jabPerStgAlpha
+  HostName 192.168.24.117
+  User mhanzik
+Host jabPerStgBeta
+  HostName 192.168.24.118
+  User mhanzik
+Host jabPerStgGamma
+  HostName 192.168.24.119
+  User mhanzik
+Host jabPerStgDelta
+  HostName 192.168.24.204
+  User mhanzik
+Host jabCiAlpha
+  HostName 192.168.24.107
+  User mhanzik
+Host jabCiBeta
+  HostName 192.168.24.108
+  User mhanzik
+Host jabCiGamma
+  HostName 192.168.24.109
+  User mhanzik
+Host jabCiDelta
+  HostName 192.168.24.110
+  User mhanzik
+Host jabProdAlpha
+  HostName 192.168.24.122
+  User mhanzik
+Host jabProdBeta
+  HostName 192.168.24.123
+  User mhanzik
+Host jabProdGamma
+  HostName 192.168.24.124
+  User mhanzik
+Host jabProdDelta
+  HostName 192.168.24.125
+  User mhanzik
+Host jabProdEpsilon
+  HostName 192.168.24.126
+  User mhanzik
+Host jabPerProdAlpha
+  HostName 192.168.24.188
+  User mhanzik
+Host jabPerProdBeta
+  HostName 192.168.24.189
+  User mhanzik
+Host jabPerProdGamma
+  HostName 192.168.24.190
+  User mhanzik
