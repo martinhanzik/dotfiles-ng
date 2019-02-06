@@ -28,9 +28,6 @@ Host jabPerStgBeta
 Host jabPerStgGamma
   HostName 192.168.24.119
   User mhanzik
-Host jabPerStgDelta
-  HostName 192.168.24.204
-  User mhanzik
 Host jabCiAlpha
   HostName 192.168.24.107
   User mhanzik

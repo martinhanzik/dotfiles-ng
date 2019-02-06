@@ -11,3 +11,4 @@
       path: config/*
     ~/.zplug:
     ~/.zshenv:
+    ~/.ssh/config: ssh/config
