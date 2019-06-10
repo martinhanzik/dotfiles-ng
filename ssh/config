@@ -1,66 +1,124 @@
-Host jabDevAlpha
+Host bastion
+  HostName bastion.jbl.hanziq.xyz
+  User ubuntu
+  ForwardAgent yes
+
+Host jabDev1
   HostName 192.168.24.104
   User mhanzik
-Host jabDevBeta
+Host jabDev2
   HostName 192.168.24.105
   User mhanzik
-Host jabDevGamma
+Host jabDev3
   HostName 192.168.24.106
   User mhanzik
-Host jabPerDevAlpha
+
+Host jabPerDev1
   HostName 192.168.24.120
   User mhanzik
-Host jabStgAlpha
+
+
+Host jabStg1
   HostName 192.168.24.101
   User mhanzik
-Host jabStgBeta
+Host jabStg2
   HostName 192.168.24.102
   User mhanzik
-Host jabStgGamma
+Host jabStg3
   HostName 192.168.24.103
   User mhanzik
-Host jabPerStgAlpha
+
+Host jabPerStg1
   HostName 192.168.24.117
   User mhanzik
-Host jabPerStgBeta
+Host jabPerStg2
   HostName 192.168.24.118
   User mhanzik
-Host jabPerStgGamma
+Host jabPerStg3
   HostName 192.168.24.119
   User mhanzik
-Host jabCiAlpha
-  HostName 192.168.24.107
-  User mhanzik
-Host jabCiBeta
-  HostName 192.168.24.108
-  User mhanzik
-Host jabCiGamma
-  HostName 192.168.24.109
-  User mhanzik
-Host jabCiDelta
-  HostName 192.168.24.110
-  User mhanzik
-Host jabProdAlpha
+
+Host jabProd1
   HostName 192.168.24.122
   User mhanzik
-Host jabProdBeta
+Host jabProd2
   HostName 192.168.24.123
   User mhanzik
-Host jabProdGamma
+Host jabProd3
   HostName 192.168.24.124
   User mhanzik
-Host jabProdDelta
+Host jabProd4
   HostName 192.168.24.125
   User mhanzik
-Host jabProdEpsilon
+Host jabProd5
   HostName 192.168.24.126
   User mhanzik
-Host jabPerProdAlpha
+Host jabProd6
+  HostName 192.168.24.200
+  User mhanzik
+Host jabProd7
+  HostName 192.168.24.201
+  User mhanzik
+Host jabProd8
+  HostName 192.168.24.202
+  User mhanzik
+
+Host jabPerProd1
   HostName 192.168.24.188
   User mhanzik
-Host jabPerProdBeta
+Host jabPerProd2
   HostName 192.168.24.189
   User mhanzik
-Host jabPerProdGamma
+Host jabPerProd3
   HostName 192.168.24.190
   User mhanzik
+Host jabPerProd4
+  HostName 192.168.24.205
+  User mhanzik
+Host jabPerProd5
+  HostName 192.168.22.206
+  User mhanzik
+
+Host jabElkProd1
+  HostName 192.168.24.204
+  User mhanzik
+Host jabElkProd2
+  HostName 192.168.24.208
+  User mhanzik
+Host jabElkProd3
+  HostName 192.168.24.209
+  User mhanzik
+
+Host jabCi1
+  HostName 192.168.24.107
+  User mhanzik
+Host jabCi2
+  HostName 192.168.24.108
+  User mhanzik
+Host jabCi3
+  HostName 192.168.24.109
+  User mhanzik
+Host jabCi4
+  HostName 192.168.24.110
+  User mhanzik
+
+Host jabNPM
+  HostName 192.168.22.147
+  User mhanzik
+
+Host aplMan1
+  HostName 209.97.143.185
+  User devops
+Host aplMan2
+  HostName 178.128.44.187
+  User devops
+Host aplMan3
+  HostName 178.128.44.218
+  User devops
+Host aplWor1
+  HostName 178.128.167.173
+  User devops
+Host jumpstation
+  HostName 195.144.107.108
+  User tparking
+  Port 23
