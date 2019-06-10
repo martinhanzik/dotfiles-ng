@@ -13,11 +13,12 @@ bindkey -e
 
 # Alt+Backspace
 backward-kill-dir () {
-    local WORDCHARS=${WORDCHARS/\/}
+    local WORDCHARS=${WORDCHARS//[\/-]}
     zle backward-kill-word
 }
 zle -N backward-kill-dir
-bindkey "${terminfo[kbs]}" backward-kill-dir
+# bindkey "${terminfo[kbs]}" backward-kill-dir
+bindkey '\e\C-?' backward-kill-dir
 
 bindkey "${terminfo[khome]}" beginning-of-line      # [Home] - Go to beginning of line
 bindkey "${terminfo[kend]}"  end-of-line           # [End] - Go to end of line

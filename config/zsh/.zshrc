@@ -36,3 +36,4 @@ export HISTFILE=~/.zhistory
 source ~/.iterm2_shell_integration.zsh
 
 eval "$(direnv hook zsh)"
+eval "$(rbenv init -)"
