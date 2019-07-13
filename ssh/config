@@ -3,6 +3,27 @@ Host bastion
   User ubuntu
   ForwardAgent yes
 
+Host awsDev1
+  HostName 172.17.8.11
+  User mhanzik
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+Host awsDev2
+  HostName 172.17.8.12
+  User mhanzik
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+Host awsDev3
+  HostName 172.17.8.13
+  User mhanzik
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+Host awsDev4
+  HostName 172.17.8.14
+  User mhanzik
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+
 Host jabDev1
   HostName 192.168.24.104
   User mhanzik
@@ -13,10 +34,19 @@ Host jabDev3
   HostName 192.168.24.106
   User mhanzik
 
-Host jabPerDev1
+Host jabDevPer1
   HostName 192.168.24.120
   User mhanzik
 
+Host jabDevBd1
+    HostName 192.168.24.191
+    User mhanzik
+Host jabDevBd2
+    HostName 192.168.24.192
+    User mhanzik
+Host jabDevBd3
+    HostName 192.168.24.195
+    User mhanzik
 
 Host jabStg1
   HostName 192.168.24.101
@@ -28,13 +58,13 @@ Host jabStg3
   HostName 192.168.24.103
   User mhanzik
 
-Host jabPerStg1
+Host jabStgPer1
   HostName 192.168.24.117
   User mhanzik
-Host jabPerStg2
+Host jabStgPer2
   HostName 192.168.24.118
   User mhanzik
-Host jabPerStg3
+Host jabStgPer3
   HostName 192.168.24.119
   User mhanzik
 
@@ -63,29 +93,29 @@ Host jabProd8
   HostName 192.168.24.202
   User mhanzik
 
-Host jabPerProd1
+Host jabProdPer1
   HostName 192.168.24.188
   User mhanzik
-Host jabPerProd2
+Host jabProdPer2
   HostName 192.168.24.189
   User mhanzik
-Host jabPerProd3
+Host jabProdPer3
   HostName 192.168.24.190
   User mhanzik
-Host jabPerProd4
+Host jabProdPer4
   HostName 192.168.24.205
   User mhanzik
-Host jabPerProd5
+Host jabProdPer5
   HostName 192.168.22.206
   User mhanzik
 
-Host jabElkProd1
+Host jabProdElk1
   HostName 192.168.24.204
   User mhanzik
-Host jabElkProd2
+Host jabProdElk2
   HostName 192.168.24.208
   User mhanzik
-Host jabElkProd3
+Host jabProdElk3
   HostName 192.168.24.209
   User mhanzik
 
@@ -122,3 +152,8 @@ Host jumpstation
   HostName 195.144.107.108
   User tparking
   Port 23
+
+Host aplVpsFree
+  HostName 37.205.8.166
+  User mah
+  Port 24
