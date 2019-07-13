@@ -29,7 +29,7 @@ m = merge --ff-only
 fm = !"git f && git m"
 fr = !"git f && git r"
 
-r = rebase --preserve-merges
+r = rebase --rebase-merges
 
 a = add
 
@@ -64,8 +64,8 @@ status = auto
 	enabled = true
 
  [user]
-   name = Martin Hanzík
-   email = martin@hanzik.com
+	name = Martin Hanzík
+	email = martin@hanzik.com
  [credential]
    helper = osxkeychain
  [filter "lfs"]
