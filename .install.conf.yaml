@@ -12,3 +12,5 @@
     ~/.zplug:
     ~/.zshenv:
     ~/.ssh/config: ssh/config
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
