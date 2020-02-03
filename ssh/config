@@ -1,7 +1,8 @@
-Host bastion
-  HostName bastion.jbl.hanziq.xyz
+Host xixoio-bastion
+  HostName bastion.xixoio.applifting.cz
   User ubuntu
   ForwardAgent yes
+  IdentityFile /Users/martinhanzik/Code/Applifting/XIXOIO/devops/terraform/bastion.pem
 
 Host awsDev1
   HostName 172.17.8.11
@@ -68,56 +69,76 @@ Host jabStgPer3
   HostName 192.168.24.119
   User mhanzik
 
-Host jabProd1
+Host jabStgBd1
+  HostName 192.168.24.199
+  User mhanzik
+Host jabStgBd2
+  HostName 192.168.24.216
+  User mhanzik
+Host jabStgBd3
+  HostName 192.168.24.217
+  User mhanzik
+
+Host jabPrd1
   HostName 192.168.24.122
   User mhanzik
-Host jabProd2
+Host jabPrd2
   HostName 192.168.24.123
   User mhanzik
-Host jabProd3
+Host jabPrd3
   HostName 192.168.24.124
   User mhanzik
-Host jabProd4
+Host jabPrd4
   HostName 192.168.24.125
   User mhanzik
-Host jabProd5
+Host jabPrd5
   HostName 192.168.24.126
   User mhanzik
-Host jabProd6
+Host jabPrd6
   HostName 192.168.24.200
   User mhanzik
-Host jabProd7
+Host jabPrd7
   HostName 192.168.24.201
   User mhanzik
-Host jabProd8
+Host jabPrd8
   HostName 192.168.24.202
   User mhanzik
 
-Host jabProdPer1
+Host jabPrdPer1
   HostName 192.168.24.188
   User mhanzik
-Host jabProdPer2
+Host jabPrdPer2
   HostName 192.168.24.189
   User mhanzik
-Host jabProdPer3
+Host jabPrdPer3
   HostName 192.168.24.190
   User mhanzik
-Host jabProdPer4
+Host jabPrdPer4
   HostName 192.168.24.205
   User mhanzik
-Host jabProdPer5
-  HostName 192.168.22.206
+Host jabPrdPer5
+  HostName 192.168.24.207
   User mhanzik
 
-Host jabProdElk1
+Host jabPrdElk1
   HostName 192.168.24.204
   User mhanzik
-Host jabProdElk2
+Host jabPrdElk2
   HostName 192.168.24.208
   User mhanzik
-Host jabProdElk3
+Host jabPrdElk3
   HostName 192.168.24.209
   User mhanzik
+
+Host jabPrdBd1
+    HostName 192.168.24.196
+    User mhanzik
+Host jabPrdBd2
+    HostName 192.168.24.197
+    User mhanzik
+Host jabPrdBd3
+    HostName 192.168.24.198
+    User mhanzik
 
 Host jabCi1
   HostName 192.168.24.107
@@ -134,6 +155,31 @@ Host jabCi4
 
 Host jabNPM
   HostName 192.168.22.147
+  User mhanzik
+
+Host jabNginx1
+  HostName 192.168.22.165
+  User mhanzik
+Host jabNginx2
+  HostName 192.168.22.166
+  User mhanzik
+
+Host jabDevDocker1
+  HostName 192.168.22.149
+  User mhanzik
+Host jabDevDocker2
+  HostName 192.168.22.151
+  User mhanzik
+
+Host jabPrdDocker1
+  HostName 192.168.22.150
+  User mhanzik
+Host jabPrdDocker2
+  HostName 192.168.22.152
+  User mhanzik
+
+Host jabCasApp1
+  HostName 192.168.22.124
   User mhanzik
 
 Host aplMan1
@@ -157,3 +203,14 @@ Host aplVpsFree
   HostName 37.205.8.166
   User mah
   Port 24
+Host aplFTP
+  HostName 167.71.45.150
+  User mah
+  Port 22
+
+Host aplAlp
+  HostName 167.71.62.192
+  User mhanzik
+
+Host git-codecommit.*.amazonaws.com
+  User APKAUHTCGC3L4RNOTYQY
