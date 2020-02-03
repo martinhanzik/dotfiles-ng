@@ -19,6 +19,8 @@ cf = !"git commit -m 'Compilation fix.'"
 cfs = !"git commit -m 'Compilation fixes.'"
 
 co = checkout
+sw = switch
+re = restore
 
 cp = cherry-pick
 
@@ -73,3 +75,5 @@ status = auto
      smudge = git-lfs smudge -- %f
    required = true
      process = git-lfs filter-process
+[diff "sopsdiffer"]
+	textconv = sops -d
