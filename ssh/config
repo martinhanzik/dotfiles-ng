@@ -1,3 +1,6 @@
+Host gitlab.com
+  IdentityFile /Users/martinhanzik/.ssh/id_ed25519
+
 Host xixoio-bastion
   HostName bastion.xixoio.applifting.cz
   User ubuntu
@@ -184,16 +187,19 @@ Host jabCasApp1
 
 Host aplMan1
   HostName 209.97.143.185
-  User devops
+  User mhanzik
 Host aplMan2
   HostName 178.128.44.187
-  User devops
+  User mhanzik
 Host aplMan3
   HostName 178.128.44.218
-  User devops
+  User mhanzik
 Host aplWor1
   HostName 178.128.167.173
-  User devops
+  User mhanzik
+Host aplWor2
+  HostName 161.35.44.86
+  User mhanzik
 Host jumpstation
   HostName 195.144.107.108
   User tparking
@@ -208,9 +214,37 @@ Host aplFTP
   User mah
   Port 22
 
-Host aplAlp
-  HostName 167.71.62.192
-  User mhanzik
+Host aplUbuntu
+  HostName 192.168.0.201
+  User mah
 
 Host git-codecommit.*.amazonaws.com
   User APKAUHTCGC3L4RNOTYQY
+
+Host alp-nexus-tst
+    HostName i-0e3aca5bc76f1fe9f
+    User ubuntu
+    IdentityFile /Users/martinhanzik/Code/Applifting/Alpiq/ssh/nexus-tst
+    ProxyCommand sh -c "AWS_PROFILE=bit-cicdtst aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
+
+Host alp-nexus-prd
+    HostName i-0dbbe18434649ff86
+    User ubuntu
+    IdentityFile /Users/martinhanzik/Code/Applifting/Alpiq/ssh/nexus-prd
+    ProxyCommand sh -c "AWS_PROFILE=bit-cicdprd aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
+
+Host alp-sonarqube
+    HostName i-074e1bc8880f118a2
+    User ubuntu
+    IdentityFile /Users/martinhanzik/Code/Applifting/Alpiq/ssh/sonarqube
+    ProxyCommand sh -c "AWS_PROFILE=bit-cicdtst aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
+
+Match exec "grep -qs '^Host.*%n' %d/.ssh/ssmtool-*"
+  Include ssmtool-*
+
+Match host i-*
+  ProxyCommand ssh-ssm.sh %h %r
+  IdentityFile ~/.ssh/ssm-ssh-tmp
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  ChallengeResponseAuthentication no
