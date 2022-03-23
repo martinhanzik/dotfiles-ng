@@ -1,6 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/martinhanzik/Code/Applifting/Devops/tools/images/.git'
+let g:netrw_dirhist_0='/Users/martinhanzik/KK/OF/OnlyFans/.settings'
+let g:netrw_dirhist_9='/Users/martinhanzik/Code/Applifting/Devops/DNS/.terraform'
+let g:netrw_dirhist_8='/Users/martinhanzik/Code/Applifting/Devops/corplifting/.gitlab'
+let g:netrw_dirhist_7='/Users/martinhanzik/Code/Applifting/tyntec/api-reference/build'
+let g:netrw_dirhist_6='/Users/martinhanzik/Code/Applifting/Devops/clusters/thor'
+let g:netrw_dirhist_5='/Users/martinhanzik/Code/Applifting/Devops/tools/images/.git'
 let g:netrw_dirhist_4='/Users/martinhanzik/Code/Applifting/Main/ops/aws/terraform/dev/network'
 let g:netrw_dirhist_3='/Users/martinhanzik/Code/Applifting/Main/ops/aws/vpc'
 let g:netrw_dirhist_2='/Users/martinhanzik/Code/Applifting/Alpiq/CI/terraform/.git'
-let g:netrw_dirhist_1='/Users/martinhanzik/Code/Applifting/Alpiq/Retail/retail-infra/.terraform'

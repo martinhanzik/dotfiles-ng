@@ -33,9 +33,15 @@ direnv hook fish | source
 
 eval (starship init fish)
 
-test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
-
-rvm default
+# rvm default
 
 bass source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
 bass source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
+
+# status --is-interactive; and pyenv init - | source
+# status --is-interactive; and pyenv virtualenv-init - | source
+
+
+source /usr/local/opt/asdf/libexec/asdf.fish
+
+set -gx HOMEBREW_GITHUB_API_TOKEN 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

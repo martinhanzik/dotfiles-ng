@@ -70,6 +70,8 @@ status = auto
 	email = martin@hanzik.com
  [credential]
    helper = osxkeychain
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager-core
  [filter "lfs"]
      clean = git-lfs clean -- %f
      smudge = git-lfs smudge -- %f
@@ -77,3 +79,7 @@ status = auto
      process = git-lfs filter-process
 [diff "sopsdiffer"]
 	textconv = sops -d
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://git.heroku.com"]
+	provider = generic

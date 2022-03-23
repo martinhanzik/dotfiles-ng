@@ -2,6 +2,7 @@ set number
 syntax on
 set cursorline
 set clipboard=unnamedplus
+set backspace=indent,eol,start
 
 inoremap jk <ESC>
 inoremap kj <ESC>

@@ -28,3 +28,6 @@ alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
 
 alias jb 'docker run --rm -v (pwd):(pwd) --workdir (pwd) quay.io/coreos/jsonnet-ci jb'
+
+alias kc 'kubectx'
+alias kn 'kubens'

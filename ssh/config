@@ -218,6 +218,14 @@ Host aplUbuntu
   HostName 192.168.0.201
   User mah
 
+Host aplMac
+  HostName 192.168.0.203
+  User martinhanzik
+
+Host aplAres
+  HostName 192.168.0.204
+  User mah
+
 Host git-codecommit.*.amazonaws.com
   User APKAUHTCGC3L4RNOTYQY
 
@@ -248,3 +256,7 @@ Match host i-*
   StrictHostKeyChecking no
   PasswordAuthentication no
   ChallengeResponseAuthentication no
+
+Host daktela
+  HostName 18.194.220.131
+  User ubuntu
